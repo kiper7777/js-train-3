@@ -128,7 +128,7 @@ console.log(
 // Задача 9: Напишіть функцію, яка конвертує число в рядок з експоненційним представленням
 
 function convertToExponential(num) {
-  const convertToExponential = num.toExponential(num);
+  const convertToExponential = num.toExponential();
   return convertToExponential;
 
   // function stringToNumber(str) {
@@ -144,8 +144,8 @@ console.log("convertToExponential(42)", convertToExponential(42)); // Вивед
 // Задача 10: Напишіть функцію, яка конвертує число в рядок з фіксованою кількістю знаків після коми
 
 function convertToFixed(num, precision) {
-  const convertToFixed = num.toFixed(num, precision);
-  return num;
+  const convertToFixed = num.toFixed(precision);
+  return convertToFixed;
 
   // Використовуємо метод toFixed(), щоб конвертувати число в рядок з фіксованою кількістю знаків після коми
 }
@@ -156,6 +156,8 @@ console.log("convertToFixed(42.9876, 2)", convertToFixed(42.9876, 2)); // Вив
 // Задача 11: Напишіть функцію, яка конвертує число в рядок
 
 function convertToString(num) {
+  const convertToString = num.toString();
+  return convertToString;
   // Використовуємо метод toString(), щоб конвертувати число в рядок
 }
 
@@ -165,6 +167,8 @@ console.log("convertToString(42)", convertToString(42)); // Виведе "42"
 // Задача 12: Напишіть функцію, яка окргугляє число до вказаної довжини
 
 function convertToPrecision(num, precision) {
+  const convertToPrecision = num.toPrecision(precision);
+  return convertToPrecision;
   // Використовуємо метод toPrecision(), щоб округлити число до вказаної довжини
 }
 
