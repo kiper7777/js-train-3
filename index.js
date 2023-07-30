@@ -128,8 +128,13 @@ console.log(
 // Задача 9: Напишіть функцію, яка конвертує число в рядок з експоненційним представленням
 
 function convertToExponential(num) {
-  // const convertToExponential = num.toFixed(num);
-  // return convertToExponential;
+  const convertToExponential = num.toExponential(num);
+  return convertToExponential;
+
+  // function stringToNumber(str) {
+  //   const stringToNumber = Number(str);
+  //   return stringToNumber;
+
   // Використовуємо метод toExponential(), щоб конвертувати число в рядок з експоненційним представленням
 }
 
@@ -139,8 +144,9 @@ console.log("convertToExponential(42)", convertToExponential(42)); // Вивед
 // Задача 10: Напишіть функцію, яка конвертує число в рядок з фіксованою кількістю знаків після коми
 
 function convertToFixed(num, precision) {
-  // const convertToFixed = num.toFixed(num, precision);
-  // return num;
+  const convertToFixed = num.toFixed(num, precision);
+  return num;
+
   // Використовуємо метод toFixed(), щоб конвертувати число в рядок з фіксованою кількістю знаків після коми
 }
 
